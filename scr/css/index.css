@@ -1,0 +1,172 @@
+/*
+Theme Name: Kenzieflix
+Theme URI: 
+Author: Karoline Borges
+Author URI: ;
+Description: Pagina do perfil.
+Version: 1.0
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+https://www.w3schools.com/css/css_outline.asp
+http://getbem.com/introduction/
+https://cssbattle.dev/
+*/
+
+/*DECLARAÇÃO DE VARIÁVEIS*/
+
+/*ESTILOS GERAIS*/
+html, body, figure, header,img, div, section, article, input, button, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* outline: none; */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.conteiner{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    padding-top: 16px;
+}
+
+/*BODY*/
+body, html{
+    background-color: #000;
+}
+/*HEADER*/
+
+.home{
+    margin-top: 5%;
+    max-width: 100%;
+    width: 1280px;
+    height: 720px;
+    background-color: #121214;
+    box-shadow: 0px 0px 50px -15px rgba(0, 0, 0, 0.09);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__perfis{
+    width: 700px;
+    height: 653px;
+}
+
+.card__perfis .logo{
+    display: flex;
+    justify-content: center;
+}
+.card__perfis .logo img{
+    margin-bottom: 72px;
+}
+
+.titulo{
+    margin-bottom: 6%;
+}
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.lista__perfis{
+    box-shadow: 0px 0px 50px -15px rgba(249, 0, 0, 0.09);
+    border-radius: 12px;
+}
+
+.lista__perfis .conteiner{
+    justify-content: space-between;
+    display: flex;
+}
+
+.lista__perfis .conteiner .lista__perfil:hover{
+    transition: 0.5s ease;
+    border-radius: 8%;
+    transition: 0.5s ease;
+}
+
+.lista__perfis .conteiner .lista__perfil img{
+    border-radius: 8%;
+    border: 2px solid transparent;
+}
+
+.lista__perfis .conteiner .lista__perfil img:hover{
+    border-radius: 8%;
+    border: 2px solid #ffffff;
+    transition: 0.5s ease;
+}
+
+.lista__perfis .conteiner .lista__perfil img:hover+p{
+    color: #FFFFFF;
+    transition: 0.5s ease;
+}
+
+.lista__perfis .conteiner .lista__perfil p{
+    color: #9C9C9C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+#circulo{
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+    border-radius: 8%;
+}
+
+#circulo:hover{
+    filter: brightness(3)invert(0);
+    border: 2px solid #ffffff;
+    transition: 0.5s ease;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 195px;
+}
+
+.gerenciar-perfis-button{
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    padding: 8px 32px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    border: 1px solid #FFFFFF;
+}
+
+.gerenciar-perfis-button:hover{
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+}
+
+/*FOOTER*/
+/*PÁGINA INICIAL*/
+/*EXTRAS*/
+/*@MEDIA*/
